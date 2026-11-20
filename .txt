@@ -1,0 +1,41 @@
+POST    /api/blood-requests	  			                Crear solicitud
+GET	    /api/blood-requests	  			                Listar con filtros
+GET	    /api/blood-requests/:id			                Obtener por id
+PATCH	  /api/blood-requests/:id			                Actualizar
+DELETE	/api/blood-requests/:id			                Eliminar
+GET	    /api/blood-requests/:id/compatible-donors	  Donantes compatibles
+POST	  /api/donors					                        Crear donante
+GET	    /api/donors					                        Listar con filtros
+GET	    /api/donors/compatible?recipientType=O-		  Buscar compatibles
+GET	    /api/donors/:id					                    Obtener por id
+PATCH	  /api/donors/:id					                    Actualizar
+DELETE	/api/donors/:id					                    Eliminar
+
+
+
+Modelo que json que se usa para la creacion de una bloodrequest
+
+{
+  "patientName": "Pedro Antonio Castillo",
+  "bloodType": "A+",
+  "hospital": "Hospital Doctor Ney Arias Lora",
+  "city": "Santo Domingo",
+  "distanceKm": 7.2,
+  "unitsNeeded": 2,
+  "isUrgent": true,
+  "timeAgo": "Hace 5 min"
+}
+
+
+Modelo json que se usa para la creacion de un donante
+
+
+{
+  "name": "Carlos Manuel Rivera",
+  "bloodType": "O-",
+  "city": "San Cristóbal",
+  "distanceKm": 2.4,
+  "donationsCount": 5,
+  "isAvailable": true,
+  "phone": "+1 809-555-0187"
+}
